@@ -1,8 +1,8 @@
-package org.example.cliente;
+package org.example.transaccion1.cliente;
 
-import org.example.transacciones.IConsultaSaldo;
-import org.example.transacciones.IPagoServicio;
-import org.example.transacciones.IRetiroEfectivo;
+import org.example.transaccion1.transacciones.IConsultaSaldo;
+import org.example.transaccion1.transacciones.IPagoServicio;
+import org.example.transaccion1.transacciones.IRetiroEfectivo;
 
 public class Basic extends Cliente implements IPagoServicio, IConsultaSaldo, IRetiroEfectivo {
 

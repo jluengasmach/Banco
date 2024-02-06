@@ -1,4 +1,4 @@
-package org.example.impresora;
+package org.example.impresora2;
 
 public class Pdf extends Documento {
     private String texto;

@@ -1,7 +1,7 @@
-package org.example.cliente;
+package org.example.transaccion1.cliente;
 
-import org.example.transacciones.IDeposito;
-import org.example.transacciones.ITransferencia;
+import org.example.transaccion1.transacciones.IDeposito;
+import org.example.transaccion1.transacciones.ITransferencia;
 
 public class Ejecutivo extends Cliente implements IDeposito, ITransferencia {
     public void depositar() {

@@ -1,10 +1,10 @@
-package org.example.transacciones;
+package org.example.transaccion1.transacciones;
 
 import static java.lang.Math.random;
 
-public interface IConsultaSaldo extends ITransaccion{
-    default void consultarSaldo() {
-        System.out.println("Consultando saldo");
+public interface IDeposito extends ITransaccion {
+    default void depositar() {
+        System.out.println("Realizando deposito");
         if ((random() < 0.5))
             ITransaccion.super.transaccionOk();
         else

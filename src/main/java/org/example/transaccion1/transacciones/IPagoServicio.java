@@ -1,10 +1,10 @@
-package org.example.transacciones;
+package org.example.transaccion1.transacciones;
 
 import static java.lang.Math.random;
 
-public interface IRetiroEfectivo extends ITransaccion{
-    default void retirarEfectivo() {
-        System.out.println("Retirando efectivo");
+public interface IPagoServicio extends ITransaccion{
+    default void pagarServicio() {
+        System.out.println("Pagando servicio");
         if ((random() < 0.5))
             ITransaccion.super.transaccionOk();
         else

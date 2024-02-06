@@ -1,4 +1,4 @@
-package org.example.transacciones;
+package org.example.transaccion1.transacciones;
 
 import static java.lang.Math.random;
 
