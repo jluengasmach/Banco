@@ -4,7 +4,7 @@ import static java.lang.Math.random;
 
 public interface ITransferencia extends ITransaccion {
     default void transferir() {
-        System.out.println("Realizando transferencia");
+        System.out.println("Realizando transferencia...");
         if ((random() < 0.5))
             ITransaccion.super.transaccionOk();
         else

@@ -1,46 +1,19 @@
 package org.example.impresora;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.experimental.FieldDefaults;
+
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class Informe extends Documento {
-
-    private String texto;
-    private int cantidadPaginas;
-    private String autor;
-    private String revisor;
-
+    String texto;
+    String autor;
+    String revisor;
+    int paginas;
     @Override
-    public void imprimir() {
-        System.out.println("Imprimiendo informe");
-    }
-
-    public String getTexto() {
-        return texto;
-    }
-
-    public void setTexto(String texto) {
-        this.texto = texto;
-    }
-
-    public int getCantidadPaginas() {
-        return cantidadPaginas;
-    }
-
-    public void setCantidadPaginas(int cantidadPaginas) {
-        this.cantidadPaginas = cantidadPaginas;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public String getRevisor() {
-        return revisor;
-    }
-
-    public void setRevisor(String revisor) {
-        this.revisor = revisor;
+    public String toString() {
+        return "Informe [texto=\"" + texto + "\", autor=" + autor + ", revisor=" + revisor
+                + ", paginas=" + paginas + "]";
     }
 }

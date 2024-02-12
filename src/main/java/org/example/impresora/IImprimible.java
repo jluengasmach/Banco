@@ -1,5 +1,7 @@
 package org.example.impresora;
 
 public interface IImprimible {
-    void imprimir();
+    static void imprimirDocumento(Documento documento){
+        documento.imprimir();
+    };
 }

@@ -4,7 +4,10 @@ import org.example.transaccion.transacciones.IConsultaSaldo;
 import org.example.transaccion.transacciones.IPagoServicio;
 import org.example.transaccion.transacciones.IRetiroEfectivo;
 
-public class Basic extends Cliente implements IPagoServicio, IConsultaSaldo, IRetiroEfectivo {
+public class Basico extends Cliente implements IPagoServicio, IConsultaSaldo, IRetiroEfectivo {
+    public Basico(String nombre) {
+        super(nombre);
+    }
 
     public void consultarSaldo() {
         IConsultaSaldo.super.consultarSaldo();

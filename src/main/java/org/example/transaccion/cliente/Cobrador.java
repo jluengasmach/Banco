@@ -4,6 +4,10 @@ import org.example.transaccion.transacciones.IConsultaSaldo;
 import org.example.transaccion.transacciones.IRetiroEfectivo;
 
 public class Cobrador extends Cliente implements IRetiroEfectivo, IConsultaSaldo {
+    public Cobrador(String nombre) {
+        super(nombre);
+    }
+
     public void consultarSaldo() {
         IConsultaSaldo.super.consultarSaldo();
     }
