@@ -1,4 +1,4 @@
-package org.example.animales3;
+package org.example.animales;
 
 public abstract class Animal {
     public abstract void emitirSonido();

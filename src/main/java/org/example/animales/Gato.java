@@ -1,4 +1,4 @@
-package org.example.animales3;
+package org.example.animales;
 
 public class Gato extends Animal implements Carnivoro {
     @Override

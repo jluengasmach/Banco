@@ -1,7 +1,7 @@
-package org.example.transaccion1.cliente;
+package org.example.transaccion.cliente;
 
-import org.example.transaccion1.transacciones.IConsultaSaldo;
-import org.example.transaccion1.transacciones.IRetiroEfectivo;
+import org.example.transaccion.transacciones.IConsultaSaldo;
+import org.example.transaccion.transacciones.IRetiroEfectivo;
 
 public class Cobrador extends Cliente implements IRetiroEfectivo, IConsultaSaldo {
     public void consultarSaldo() {

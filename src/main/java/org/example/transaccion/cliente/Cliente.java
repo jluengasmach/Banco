@@ -1,4 +1,4 @@
-package org.example.transaccion1.cliente;
+package org.example.transaccion.cliente;
 
 public abstract class Cliente {
     String nombre;

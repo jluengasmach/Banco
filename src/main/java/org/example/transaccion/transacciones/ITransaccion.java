@@ -1,4 +1,4 @@
-package org.example.transaccion1.transacciones;
+package org.example.transaccion.transacciones;
 
 public interface ITransaccion {
     default void transaccionOk() {

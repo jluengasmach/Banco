@@ -1,4 +1,4 @@
-package org.example.impresora2;
+package org.example.impresora;
 
 public class Informe extends Documento {
 
